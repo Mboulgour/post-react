@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 }
 
 .App-logo {
@@ -19,4 +22,60 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+h1{
+  font-size: 6rem;
+  margin: 50px 20px;
+  font-weight: bold;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+  padding: 50px;
+  border: 1px solid crimson;
+  border-radius: 3px;
+}
+
+form input{
+  border: 1px solid #dc143c77;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 20px 20px 20px;
+  color: #dc143c77;
+}
+
+form label{
+  color: crimson;
+  margin: 0;
+  font-weight: bold;
+}
+
+form input[type=submit]{
+  border: none;
+  background: crimson;
+  color: white;
+  padding: 15px 35px;
+  margin-top: 20px;
+  align-self: flex-end;
+  transition: opacity .5s;
+}
+
+form input[type=submit]:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+
+form input[type=textarea]{
+  border: 1px solid #dc143c77;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 20px 20px 20px;
+  width: 229px;
+  height: 50px;
+  resize: none;
+  color: #dc143c77;
 }
